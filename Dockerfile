@@ -14,7 +14,7 @@ RUN npm ci
 # Copy the rest ouf our source code and configuration.
 COPY tsconfig.json ./
 COPY public ./public
-COPY src ./src
+COPY src ./lab-cicd/src
 
 # Transpile our applications into static files.
 RUN npm run build
