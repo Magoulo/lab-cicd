@@ -59,6 +59,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: ./lab-cicd
           push: true
           # Name our container image ghcr.io/YOUR_USER/lab-cicd:latest and something similar to ghcr.io/YOUR_USER/lab-cicd:f296f4d
           tags: "${{ env.IMAGE_REGISTRY }}/lab-cicd:${{ env.SHA_SHORT }},${{ env.IMAGE_REGISTRY }}/lab-cicd:latest"
