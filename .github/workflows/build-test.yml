@@ -63,4 +63,4 @@ jobs:
           # Name our container image ghcr.io/YOUR_USER/lab-cicd:latest and something similar to ghcr.io/YOUR_USER/lab-cicd:f296f4d
           tags: "${{ env.IMAGE_REGISTRY }}/lab-cicd:${{ env.SHA_SHORT }},${{ env.IMAGE_REGISTRY }}/lab-cicd:latest"
           build-args: |
-          VITE_API_BASE_URL="${{ env.VITE_API_BASE_URL }}"
+            VITE_API_BASE_URL="${{ env.VITE_API_BASE_URL }}"
