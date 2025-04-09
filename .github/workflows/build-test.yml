@@ -27,8 +27,8 @@ jobs:
     # Run on a ubuntu-22.04 VM image
     runs-on: ubuntu-22.04
     permissions:
-    packages: write
-    contents: write
+      packages: write
+      contents: write
     name: Build cicd-lab
     env:
       VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
